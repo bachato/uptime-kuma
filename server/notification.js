@@ -30,6 +30,7 @@ const Mattermost = require("./notification-providers/mattermost");
 const Nostr = require("./notification-providers/nostr");
 const Ntfy = require("./notification-providers/ntfy");
 const Octopush = require("./notification-providers/octopush");
+const OneChat = require("./notification-providers/onechat");
 const OneBot = require("./notification-providers/onebot");
 const Opsgenie = require("./notification-providers/opsgenie");
 const PagerDuty = require("./notification-providers/pagerduty");
@@ -74,6 +75,7 @@ const Wpush = require("./notification-providers/wpush");
 const SendGrid = require("./notification-providers/send-grid");
 const YZJ = require("./notification-providers/yzj");
 const SMSPlanet = require("./notification-providers/sms-planet");
+const SpugPush = require("./notification-providers/spugpush");
 
 class Notification {
 
@@ -121,6 +123,7 @@ class Notification {
             new Nostr(),
             new Ntfy(),
             new Octopush(),
+            new OneChat(),
             new OneBot(),
             new Onesender(),
             new Opsgenie(),
@@ -165,6 +168,7 @@ class Notification {
             new SendGrid(),
             new YZJ(),
             new SMSPlanet(),
+            new SpugPush(),
         ];
         for (let item of list) {
             if (! item.name) {

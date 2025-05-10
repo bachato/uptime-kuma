@@ -29,6 +29,7 @@ import Mattermost from "./Mattermost.vue";
 import Nostr from "./Nostr.vue";
 import Ntfy from "./Ntfy.vue";
 import Octopush from "./Octopush.vue";
+import OneChat from "./OneChat.vue";
 import OneBot from "./OneBot.vue";
 import Onesender from "./Onesender.vue";
 import Opsgenie from "./Opsgenie.vue";
@@ -63,6 +64,7 @@ import WeCom from "./WeCom.vue";
 import GoAlert from "./GoAlert.vue";
 import ZohoCliq from "./ZohoCliq.vue";
 import Splunk from "./Splunk.vue";
+import SpugPush from "./SpugPush.vue";
 import SevenIO from "./SevenIO.vue";
 import Whapi from "./Whapi.vue";
 import WAHA from "./WAHA.vue";
@@ -108,6 +110,7 @@ const NotificationFormList = {
     "nostr": Nostr,
     "ntfy": Ntfy,
     "octopush": Octopush,
+    "OneChat": OneChat,
     "OneBot": OneBot,
     "Onesender": Onesender,
     "Opsgenie": Opsgenie,
@@ -138,6 +141,7 @@ const NotificationFormList = {
     "threema": Threema,
     "twilio": Twilio,
     "Splunk": Splunk,
+    "SpugPush": SpugPush,
     "webhook": Webhook,
     "WeCom": WeCom,
     "GoAlert": GoAlert,
